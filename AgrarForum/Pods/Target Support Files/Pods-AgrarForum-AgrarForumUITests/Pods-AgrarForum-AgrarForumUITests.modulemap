@@ -1,0 +1,6 @@
+framework module Pods_AgrarForum_AgrarForumUITests {
+  umbrella header "Pods-AgrarForum-AgrarForumUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

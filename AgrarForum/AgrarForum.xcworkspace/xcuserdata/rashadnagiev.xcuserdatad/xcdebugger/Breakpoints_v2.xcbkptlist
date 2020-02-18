@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "CC0EEB45-01B2-493F-84D7-20AC6E4671F3"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D489C2B4-9DB8-462B-8070-1A83C24BB2CC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AgrarForum/Controller/TableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "authorize(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B1BD6FE9-76C4-4203-8382-5FADA8BD1C8B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AgrarForum/Controller/TableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "authorize(sender:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B1BD6FE9-76C4-4203-8382-5FADA8BD1C8B - 142413e4a9a02567"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AgrarForum.TableViewController.authorize() -&gt; ()"
+                  moduleName = "AgrarForum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rashadnagiev/Desktop/agrarforum/AgrarForum/AgrarForum/Controller/TableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "1701">
+               </Location>
+               <Location
+                  uuid = "B1BD6FE9-76C4-4203-8382-5FADA8BD1C8B - eb95d76b4139f9cc"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;AgrarForum.User&gt;) -&gt; () in AgrarForum.TableViewController.authorize() -&gt; ()"
+                  moduleName = "AgrarForum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rashadnagiev/Desktop/agrarforum/AgrarForum/AgrarForum/Controller/TableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "151"
+                  endingLineNumber = "151"
+                  offsetFromSymbolStart = "87">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

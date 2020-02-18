@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="ProfileButton" customModule="AgrarForum" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="219" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="219" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fta-jw-MCQ">
+                        <rect key="frame" x="8" y="8" width="203" height="84"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="fta-jw-MCQ" secondAttribute="trailing" constant="8" id="IeD-lC-WIL"/>
+                    <constraint firstItem="fta-jw-MCQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="YGv-Og-6oG"/>
+                    <constraint firstAttribute="bottom" secondItem="fta-jw-MCQ" secondAttribute="bottom" constant="8" id="w9M-aT-ogg"/>
+                    <constraint firstItem="fta-jw-MCQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="wt8-GT-HgP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bottomConst" destination="w9M-aT-ogg" id="qcT-NB-xi7"/>
+                <outlet property="button" destination="fta-jw-MCQ" id="mRy-K3-tFZ"/>
+                <outlet property="leadingConst" destination="wt8-GT-HgP" id="gPN-vv-u49"/>
+                <outlet property="topConst" destination="YGv-Og-6oG" id="N1o-dP-jQ2"/>
+                <outlet property="trailinConst" destination="IeD-lC-WIL" id="1py-df-c0p"/>
+            </connections>
+            <point key="canvasLocation" x="287.68115942028987" y="128.57142857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

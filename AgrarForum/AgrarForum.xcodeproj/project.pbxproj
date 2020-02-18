@@ -1,0 +1,1007 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0207A21623DC59340093F989 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0207A21523DC59340093F989 /* AppDelegate.swift */; };
+		0207A21823DC59340093F989 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0207A21723DC59340093F989 /* SceneDelegate.swift */; };
+		0207A21A23DC59340093F989 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0207A21923DC59340093F989 /* TableViewController.swift */; };
+		0207A21D23DC59340093F989 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0207A21B23DC59340093F989 /* Main.storyboard */; };
+		0207A21F23DC59350093F989 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207A21E23DC59350093F989 /* Assets.xcassets */; };
+		0207A22223DC59350093F989 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0207A22023DC59350093F989 /* LaunchScreen.storyboard */; };
+		0207A22D23DC59350093F989 /* AgrarForumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0207A22C23DC59350093F989 /* AgrarForumTests.swift */; };
+		0207A23823DC59350093F989 /* AgrarForumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0207A23723DC59350093F989 /* AgrarForumUITests.swift */; };
+		0207A24823DC6EA00093F989 /* LogoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0207A24623DC6E9F0093F989 /* LogoCell.swift */; };
+		0207A24923DC6EA00093F989 /* LogoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0207A24723DC6EA00093F989 /* LogoCell.xib */; };
+		0207A24F23DC7BF50093F989 /* TextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0207A24D23DC7BF50093F989 /* TextFieldCell.xib */; };
+		0207A25223DC7D490093F989 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0207A25023DC7D490093F989 /* ButtonCell.swift */; };
+		0207A25323DC7D490093F989 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0207A25123DC7D490093F989 /* ButtonCell.xib */; };
+		0207A25623DD9E760093F989 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0207A25423DD9E760093F989 /* EmptyCell.swift */; };
+		0207A25723DD9E760093F989 /* EmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0207A25523DD9E760093F989 /* EmptyCell.xib */; };
+		0207A25A23DDA5630093F989 /* TitleAndDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0207A25823DDA5630093F989 /* TitleAndDateCell.swift */; };
+		0207A25B23DDA5630093F989 /* TitleAndDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0207A25923DDA5630093F989 /* TitleAndDateCell.xib */; };
+		0207A25E23DDA59C0093F989 /* QuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0207A25D23DDA59C0093F989 /* QuestionVC.swift */; };
+		0207A26123DDA5FE0093F989 /* TitleAndDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0207A26023DDA5FE0093F989 /* TitleAndDate.swift */; };
+		020906B723E9666B009A7E47 /* PickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020906B523E9666B009A7E47 /* PickerCell.swift */; };
+		020906B823E9666B009A7E47 /* PickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 020906B623E9666B009A7E47 /* PickerCell.xib */; };
+		020906BC23ED7BB6009A7E47 /* HeaderProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020906BA23ED7BB6009A7E47 /* HeaderProfile.swift */; };
+		020906BD23ED7BB6009A7E47 /* HeaderProfile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 020906BB23ED7BB6009A7E47 /* HeaderProfile.xib */; };
+		020906C023ED9C26009A7E47 /* ProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020906BE23ED9C26009A7E47 /* ProfileButton.swift */; };
+		020906C123ED9C26009A7E47 /* ProfileButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 020906BF23ED9C26009A7E47 /* ProfileButton.xib */; };
+		020906C423EDA2D3009A7E47 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020906C223EDA2D3009A7E47 /* InfoCell.swift */; };
+		020906C523EDA2D3009A7E47 /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 020906C323EDA2D3009A7E47 /* InfoCell.xib */; };
+		020906C823F028A8009A7E47 /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020906C723F028A8009A7E47 /* ApiHelper.swift */; };
+		0299C25823F02BBD00B87212 /* stheiti_light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02CA897C23E04C9000D011EF /* stheiti_light.ttf */; };
+		0299C25923F02BBF00B87212 /* stheiti_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02CA897D23E04C9000D011EF /* stheiti_medium.ttf */; };
+		02CA897A23DDAE2A00D011EF /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CA897923DDAE2A00D011EF /* TextFieldCell.swift */; };
+		02CA898123E059A200D011EF /* RegistrationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CA897F23E059A200D011EF /* RegistrationCell.swift */; };
+		02CA898223E059A200D011EF /* RegistrationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02CA898023E059A200D011EF /* RegistrationCell.xib */; };
+		02CA898423E0748500D011EF /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CA898323E0748500D011EF /* RegistrationViewController.swift */; };
+		02CA898B23E0759200D011EF /* AgrarForumLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CA898923E0759200D011EF /* AgrarForumLabelCell.swift */; };
+		02CA898C23E0759200D011EF /* AgrarForumLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02CA898A23E0759200D011EF /* AgrarForumLabelCell.xib */; };
+		02CA898F23E0765900D011EF /* RegistrationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CA898D23E0765900D011EF /* RegistrationLabel.swift */; };
+		02CA899023E0765900D011EF /* RegistrationLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02CA898E23E0765900D011EF /* RegistrationLabel.xib */; };
+		02CA899323E2E76100D011EF /* CheckBoxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CA899123E2E76100D011EF /* CheckBoxCell.swift */; };
+		02CA899423E2E76100D011EF /* CheckBoxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02CA899223E2E76100D011EF /* CheckBoxCell.xib */; };
+		02CCAE0D23F02CD40099A7B2 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCAE0C23F02CD40099A7B2 /* Status.swift */; };
+		02CCAE0F23F2BB670099A7B2 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCAE0E23F2BB670099A7B2 /* ProfileVC.swift */; };
+		02CCAE1123F6A7B20099A7B2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCAE1023F6A7B20099A7B2 /* User.swift */; };
+		02CCAE1623F6B0220099A7B2 /* QuestionsHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCAE1423F6B0220099A7B2 /* QuestionsHeaderCell.swift */; };
+		02CCAE1723F6B0220099A7B2 /* QuestionsHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02CCAE1523F6B0220099A7B2 /* QuestionsHeaderCell.xib */; };
+		02CCAE1923F6CAA30099A7B2 /* StatusUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCAE1823F6CAA30099A7B2 /* StatusUser.swift */; };
+		02CCAE1D23FA8B040099A7B2 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCAE1C23FA8B040099A7B2 /* SearchVC.swift */; };
+		02CCAE2123FBD77E0099A7B2 /* HeaderSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCAE1F23FBD77E0099A7B2 /* HeaderSearchCell.swift */; };
+		02CCAE2223FBD77E0099A7B2 /* HeaderSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02CCAE2023FBD77E0099A7B2 /* HeaderSearchCell.xib */; };
+		02CCAE2423FBDBC80099A7B2 /* ProfileUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCAE2323FBDBC80099A7B2 /* ProfileUserVC.swift */; };
+		3E1874D444FD92E770DEE1D4 /* Pods_AgrarForum_AgrarForumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7449D37FA15885F8E7AB5B /* Pods_AgrarForum_AgrarForumUITests.framework */; };
+		588E202C4FC61579A9AC964A /* Pods_AgrarForum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAD0C21B373E5934FE8E427 /* Pods_AgrarForum.framework */; };
+		6F3C09457AF0583274C94EE9 /* Pods_AgrarForumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E11958AA3F068E819497C8D /* Pods_AgrarForumTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0207A22923DC59350093F989 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0207A20A23DC59340093F989 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0207A21123DC59340093F989;
+			remoteInfo = AgrarForum;
+		};
+		0207A23423DC59350093F989 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0207A20A23DC59340093F989 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0207A21123DC59340093F989;
+			remoteInfo = AgrarForum;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0048180FF66F98DADBAB0BA4 /* Pods-AgrarForum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgrarForum.release.xcconfig"; path = "Target Support Files/Pods-AgrarForum/Pods-AgrarForum.release.xcconfig"; sourceTree = "<group>"; };
+		0207A21223DC59340093F989 /* AgrarForum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgrarForum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0207A21523DC59340093F989 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0207A21723DC59340093F989 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0207A21923DC59340093F989 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		0207A21C23DC59340093F989 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0207A21E23DC59350093F989 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0207A22123DC59350093F989 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0207A22323DC59350093F989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0207A22823DC59350093F989 /* AgrarForumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgrarForumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0207A22C23DC59350093F989 /* AgrarForumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgrarForumTests.swift; sourceTree = "<group>"; };
+		0207A22E23DC59350093F989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0207A23323DC59350093F989 /* AgrarForumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgrarForumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0207A23723DC59350093F989 /* AgrarForumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgrarForumUITests.swift; sourceTree = "<group>"; };
+		0207A23923DC59350093F989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0207A24623DC6E9F0093F989 /* LogoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoCell.swift; sourceTree = "<group>"; };
+		0207A24723DC6EA00093F989 /* LogoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoCell.xib; sourceTree = "<group>"; };
+		0207A24D23DC7BF50093F989 /* TextFieldCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldCell.xib; sourceTree = "<group>"; };
+		0207A25023DC7D490093F989 /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
+		0207A25123DC7D490093F989 /* ButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
+		0207A25423DD9E760093F989 /* EmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
+		0207A25523DD9E760093F989 /* EmptyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyCell.xib; sourceTree = "<group>"; };
+		0207A25823DDA5630093F989 /* TitleAndDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAndDateCell.swift; sourceTree = "<group>"; };
+		0207A25923DDA5630093F989 /* TitleAndDateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleAndDateCell.xib; sourceTree = "<group>"; };
+		0207A25D23DDA59C0093F989 /* QuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionVC.swift; sourceTree = "<group>"; };
+		0207A26023DDA5FE0093F989 /* TitleAndDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAndDate.swift; sourceTree = "<group>"; };
+		020906B523E9666B009A7E47 /* PickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerCell.swift; sourceTree = "<group>"; };
+		020906B623E9666B009A7E47 /* PickerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerCell.xib; sourceTree = "<group>"; };
+		020906BA23ED7BB6009A7E47 /* HeaderProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderProfile.swift; sourceTree = "<group>"; };
+		020906BB23ED7BB6009A7E47 /* HeaderProfile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderProfile.xib; sourceTree = "<group>"; };
+		020906BE23ED9C26009A7E47 /* ProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButton.swift; sourceTree = "<group>"; };
+		020906BF23ED9C26009A7E47 /* ProfileButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileButton.xib; sourceTree = "<group>"; };
+		020906C223EDA2D3009A7E47 /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		020906C323EDA2D3009A7E47 /* InfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCell.xib; sourceTree = "<group>"; };
+		020906C723F028A8009A7E47 /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
+		02CA897923DDAE2A00D011EF /* TextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
+		02CA897C23E04C9000D011EF /* stheiti_light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = stheiti_light.ttf; path = AgrarForum/Resources/stheiti_light.ttf; sourceTree = SOURCE_ROOT; };
+		02CA897D23E04C9000D011EF /* stheiti_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = stheiti_medium.ttf; path = AgrarForum/Resources/stheiti_medium.ttf; sourceTree = SOURCE_ROOT; };
+		02CA897F23E059A200D011EF /* RegistrationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCell.swift; sourceTree = "<group>"; };
+		02CA898023E059A200D011EF /* RegistrationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationCell.xib; sourceTree = "<group>"; };
+		02CA898323E0748500D011EF /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		02CA898923E0759200D011EF /* AgrarForumLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgrarForumLabelCell.swift; sourceTree = "<group>"; };
+		02CA898A23E0759200D011EF /* AgrarForumLabelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgrarForumLabelCell.xib; sourceTree = "<group>"; };
+		02CA898D23E0765900D011EF /* RegistrationLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationLabel.swift; sourceTree = "<group>"; };
+		02CA898E23E0765900D011EF /* RegistrationLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationLabel.xib; sourceTree = "<group>"; };
+		02CA899123E2E76100D011EF /* CheckBoxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxCell.swift; sourceTree = "<group>"; };
+		02CA899223E2E76100D011EF /* CheckBoxCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckBoxCell.xib; sourceTree = "<group>"; };
+		02CCAE0C23F02CD40099A7B2 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		02CCAE0E23F2BB670099A7B2 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		02CCAE1023F6A7B20099A7B2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		02CCAE1423F6B0220099A7B2 /* QuestionsHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsHeaderCell.swift; sourceTree = "<group>"; };
+		02CCAE1523F6B0220099A7B2 /* QuestionsHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionsHeaderCell.xib; sourceTree = "<group>"; };
+		02CCAE1823F6CAA30099A7B2 /* StatusUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusUser.swift; sourceTree = "<group>"; };
+		02CCAE1C23FA8B040099A7B2 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		02CCAE1F23FBD77E0099A7B2 /* HeaderSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSearchCell.swift; sourceTree = "<group>"; };
+		02CCAE2023FBD77E0099A7B2 /* HeaderSearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderSearchCell.xib; sourceTree = "<group>"; };
+		02CCAE2323FBDBC80099A7B2 /* ProfileUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserVC.swift; sourceTree = "<group>"; };
+		16E0F65717B82D1C71B40D6E /* Pods-AgrarForum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgrarForum.debug.xcconfig"; path = "Target Support Files/Pods-AgrarForum/Pods-AgrarForum.debug.xcconfig"; sourceTree = "<group>"; };
+		3E11958AA3F068E819497C8D /* Pods_AgrarForumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgrarForumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EAB2E8076FDF716855ED9D5 /* Pods-AgrarForum-AgrarForumUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgrarForum-AgrarForumUITests.release.xcconfig"; path = "Target Support Files/Pods-AgrarForum-AgrarForumUITests/Pods-AgrarForum-AgrarForumUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A80C7068037DECEF7E738EE0 /* Pods-AgrarForum-AgrarForumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgrarForum-AgrarForumUITests.debug.xcconfig"; path = "Target Support Files/Pods-AgrarForum-AgrarForumUITests/Pods-AgrarForum-AgrarForumUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB7449D37FA15885F8E7AB5B /* Pods_AgrarForum_AgrarForumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgrarForum_AgrarForumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEAD0C21B373E5934FE8E427 /* Pods_AgrarForum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgrarForum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F9EBCD96BC5D31CE9F928A /* Pods-AgrarForumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgrarForumTests.debug.xcconfig"; path = "Target Support Files/Pods-AgrarForumTests/Pods-AgrarForumTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D83E6A80BE732417084A907A /* Pods-AgrarForumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgrarForumTests.release.xcconfig"; path = "Target Support Files/Pods-AgrarForumTests/Pods-AgrarForumTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0207A20F23DC59340093F989 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				588E202C4FC61579A9AC964A /* Pods_AgrarForum.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0207A22523DC59350093F989 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F3C09457AF0583274C94EE9 /* Pods_AgrarForumTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0207A23023DC59350093F989 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E1874D444FD92E770DEE1D4 /* Pods_AgrarForum_AgrarForumUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0207A20923DC59340093F989 = {
+			isa = PBXGroup;
+			children = (
+				02CA897B23E04C7200D011EF /* Resources */,
+				0207A21423DC59340093F989 /* AgrarForum */,
+				0207A22B23DC59350093F989 /* AgrarForumTests */,
+				0207A23623DC59350093F989 /* AgrarForumUITests */,
+				0207A21323DC59340093F989 /* Products */,
+				DCE347770D0D51BF002CEB13 /* Pods */,
+				AA8C16A7E952AAA70B4AD252 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0207A21323DC59340093F989 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0207A21223DC59340093F989 /* AgrarForum.app */,
+				0207A22823DC59350093F989 /* AgrarForumTests.xctest */,
+				0207A23323DC59350093F989 /* AgrarForumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0207A21423DC59340093F989 /* AgrarForum */ = {
+			isa = PBXGroup;
+			children = (
+				020906C623F02896009A7E47 /* Network */,
+				0207A21523DC59340093F989 /* AppDelegate.swift */,
+				0207A21723DC59340093F989 /* SceneDelegate.swift */,
+				0207A25F23DDA5EC0093F989 /* Model */,
+				0207A25C23DDA57F0093F989 /* Controller */,
+				0207A24523DC6E920093F989 /* Cells */,
+				0207A21B23DC59340093F989 /* Main.storyboard */,
+				0207A21E23DC59350093F989 /* Assets.xcassets */,
+				0207A22023DC59350093F989 /* LaunchScreen.storyboard */,
+				0207A22323DC59350093F989 /* Info.plist */,
+			);
+			path = AgrarForum;
+			sourceTree = "<group>";
+		};
+		0207A22B23DC59350093F989 /* AgrarForumTests */ = {
+			isa = PBXGroup;
+			children = (
+				0207A22C23DC59350093F989 /* AgrarForumTests.swift */,
+				0207A22E23DC59350093F989 /* Info.plist */,
+			);
+			path = AgrarForumTests;
+			sourceTree = "<group>";
+		};
+		0207A23623DC59350093F989 /* AgrarForumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0207A23723DC59350093F989 /* AgrarForumUITests.swift */,
+				0207A23923DC59350093F989 /* Info.plist */,
+			);
+			path = AgrarForumUITests;
+			sourceTree = "<group>";
+		};
+		0207A24523DC6E920093F989 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				02CCAE1E23FBD7660099A7B2 /* Search */,
+				02CCAE1223F6AFF40099A7B2 /* Questions */,
+				020906B923ED7B9E009A7E47 /* Profile */,
+				02CA897E23E0596C00D011EF /* LoginRegistration */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0207A25C23DDA57F0093F989 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0207A21923DC59340093F989 /* TableViewController.swift */,
+				0207A25D23DDA59C0093F989 /* QuestionVC.swift */,
+				02CA898323E0748500D011EF /* RegistrationViewController.swift */,
+				02CCAE0E23F2BB670099A7B2 /* ProfileVC.swift */,
+				02CCAE1C23FA8B040099A7B2 /* SearchVC.swift */,
+				02CCAE2323FBDBC80099A7B2 /* ProfileUserVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0207A25F23DDA5EC0093F989 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0207A26023DDA5FE0093F989 /* TitleAndDate.swift */,
+				02CCAE0C23F02CD40099A7B2 /* Status.swift */,
+				02CCAE1023F6A7B20099A7B2 /* User.swift */,
+				02CCAE1823F6CAA30099A7B2 /* StatusUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		020906B923ED7B9E009A7E47 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				020906BA23ED7BB6009A7E47 /* HeaderProfile.swift */,
+				020906BB23ED7BB6009A7E47 /* HeaderProfile.xib */,
+				020906BE23ED9C26009A7E47 /* ProfileButton.swift */,
+				020906BF23ED9C26009A7E47 /* ProfileButton.xib */,
+				020906C223EDA2D3009A7E47 /* InfoCell.swift */,
+				020906C323EDA2D3009A7E47 /* InfoCell.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		020906C623F02896009A7E47 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				020906C723F028A8009A7E47 /* ApiHelper.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		02CA897B23E04C7200D011EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				02CA897C23E04C9000D011EF /* stheiti_light.ttf */,
+				02CA897D23E04C9000D011EF /* stheiti_medium.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		02CA897E23E0596C00D011EF /* LoginRegistration */ = {
+			isa = PBXGroup;
+			children = (
+				02CA898623E0756700D011EF /* Registration */,
+				02CA898523E0755100D011EF /* Login */,
+			);
+			path = LoginRegistration;
+			sourceTree = "<group>";
+		};
+		02CA898523E0755100D011EF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0207A24623DC6E9F0093F989 /* LogoCell.swift */,
+				0207A24723DC6EA00093F989 /* LogoCell.xib */,
+				0207A24D23DC7BF50093F989 /* TextFieldCell.xib */,
+				0207A25023DC7D490093F989 /* ButtonCell.swift */,
+				0207A25123DC7D490093F989 /* ButtonCell.xib */,
+				0207A25423DD9E760093F989 /* EmptyCell.swift */,
+				0207A25523DD9E760093F989 /* EmptyCell.xib */,
+				0207A25823DDA5630093F989 /* TitleAndDateCell.swift */,
+				0207A25923DDA5630093F989 /* TitleAndDateCell.xib */,
+				02CA897923DDAE2A00D011EF /* TextFieldCell.swift */,
+				02CA897F23E059A200D011EF /* RegistrationCell.swift */,
+				02CA898023E059A200D011EF /* RegistrationCell.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		02CA898623E0756700D011EF /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				02CA898923E0759200D011EF /* AgrarForumLabelCell.swift */,
+				02CA898A23E0759200D011EF /* AgrarForumLabelCell.xib */,
+				02CA898D23E0765900D011EF /* RegistrationLabel.swift */,
+				02CA898E23E0765900D011EF /* RegistrationLabel.xib */,
+				02CA899123E2E76100D011EF /* CheckBoxCell.swift */,
+				02CA899223E2E76100D011EF /* CheckBoxCell.xib */,
+				020906B523E9666B009A7E47 /* PickerCell.swift */,
+				020906B623E9666B009A7E47 /* PickerCell.xib */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		02CCAE1223F6AFF40099A7B2 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				02CCAE1323F6AFFF0099A7B2 /* QuestionsOfP */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
+		02CCAE1323F6AFFF0099A7B2 /* QuestionsOfP */ = {
+			isa = PBXGroup;
+			children = (
+				02CCAE1423F6B0220099A7B2 /* QuestionsHeaderCell.swift */,
+				02CCAE1523F6B0220099A7B2 /* QuestionsHeaderCell.xib */,
+			);
+			path = QuestionsOfP;
+			sourceTree = "<group>";
+		};
+		02CCAE1E23FBD7660099A7B2 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				02CCAE1F23FBD77E0099A7B2 /* HeaderSearchCell.swift */,
+				02CCAE2023FBD77E0099A7B2 /* HeaderSearchCell.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		AA8C16A7E952AAA70B4AD252 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEAD0C21B373E5934FE8E427 /* Pods_AgrarForum.framework */,
+				AB7449D37FA15885F8E7AB5B /* Pods_AgrarForum_AgrarForumUITests.framework */,
+				3E11958AA3F068E819497C8D /* Pods_AgrarForumTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCE347770D0D51BF002CEB13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16E0F65717B82D1C71B40D6E /* Pods-AgrarForum.debug.xcconfig */,
+				0048180FF66F98DADBAB0BA4 /* Pods-AgrarForum.release.xcconfig */,
+				A80C7068037DECEF7E738EE0 /* Pods-AgrarForum-AgrarForumUITests.debug.xcconfig */,
+				4EAB2E8076FDF716855ED9D5 /* Pods-AgrarForum-AgrarForumUITests.release.xcconfig */,
+				D2F9EBCD96BC5D31CE9F928A /* Pods-AgrarForumTests.debug.xcconfig */,
+				D83E6A80BE732417084A907A /* Pods-AgrarForumTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0207A21123DC59340093F989 /* AgrarForum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0207A23C23DC59350093F989 /* Build configuration list for PBXNativeTarget "AgrarForum" */;
+			buildPhases = (
+				95F35D4ABC479F71C23DD5A7 /* [CP] Check Pods Manifest.lock */,
+				0207A20E23DC59340093F989 /* Sources */,
+				0207A20F23DC59340093F989 /* Frameworks */,
+				0207A21023DC59340093F989 /* Resources */,
+				8D7E88BCD2337E11DA05DB39 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgrarForum;
+			productName = AgrarForum;
+			productReference = 0207A21223DC59340093F989 /* AgrarForum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0207A22723DC59350093F989 /* AgrarForumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0207A23F23DC59350093F989 /* Build configuration list for PBXNativeTarget "AgrarForumTests" */;
+			buildPhases = (
+				C6A5B5968EF399566CDE19D0 /* [CP] Check Pods Manifest.lock */,
+				0207A22423DC59350093F989 /* Sources */,
+				0207A22523DC59350093F989 /* Frameworks */,
+				0207A22623DC59350093F989 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0207A22A23DC59350093F989 /* PBXTargetDependency */,
+			);
+			name = AgrarForumTests;
+			productName = AgrarForumTests;
+			productReference = 0207A22823DC59350093F989 /* AgrarForumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0207A23223DC59350093F989 /* AgrarForumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0207A24223DC59350093F989 /* Build configuration list for PBXNativeTarget "AgrarForumUITests" */;
+			buildPhases = (
+				B4F9A1448855DDB86D243F77 /* [CP] Check Pods Manifest.lock */,
+				0207A22F23DC59350093F989 /* Sources */,
+				0207A23023DC59350093F989 /* Frameworks */,
+				0207A23123DC59350093F989 /* Resources */,
+				D79B5DD4E041DE018A03EBB8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0207A23523DC59350093F989 /* PBXTargetDependency */,
+			);
+			name = AgrarForumUITests;
+			productName = AgrarForumUITests;
+			productReference = 0207A23323DC59350093F989 /* AgrarForumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0207A20A23DC59340093F989 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Rashad Nagiev";
+				TargetAttributes = {
+					0207A21123DC59340093F989 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					0207A22723DC59350093F989 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 0207A21123DC59340093F989;
+					};
+					0207A23223DC59350093F989 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 0207A21123DC59340093F989;
+					};
+				};
+			};
+			buildConfigurationList = 0207A20D23DC59340093F989 /* Build configuration list for PBXProject "AgrarForum" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0207A20923DC59340093F989;
+			productRefGroup = 0207A21323DC59340093F989 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0207A21123DC59340093F989 /* AgrarForum */,
+				0207A22723DC59350093F989 /* AgrarForumTests */,
+				0207A23223DC59350093F989 /* AgrarForumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0207A21023DC59340093F989 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0207A25B23DDA5630093F989 /* TitleAndDateCell.xib in Resources */,
+				0207A22223DC59350093F989 /* LaunchScreen.storyboard in Resources */,
+				0299C25923F02BBF00B87212 /* stheiti_medium.ttf in Resources */,
+				02CA898C23E0759200D011EF /* AgrarForumLabelCell.xib in Resources */,
+				02CCAE2223FBD77E0099A7B2 /* HeaderSearchCell.xib in Resources */,
+				0207A24F23DC7BF50093F989 /* TextFieldCell.xib in Resources */,
+				02CA899423E2E76100D011EF /* CheckBoxCell.xib in Resources */,
+				0207A25723DD9E760093F989 /* EmptyCell.xib in Resources */,
+				02CCAE1723F6B0220099A7B2 /* QuestionsHeaderCell.xib in Resources */,
+				020906B823E9666B009A7E47 /* PickerCell.xib in Resources */,
+				0207A21F23DC59350093F989 /* Assets.xcassets in Resources */,
+				02CA899023E0765900D011EF /* RegistrationLabel.xib in Resources */,
+				020906C523EDA2D3009A7E47 /* InfoCell.xib in Resources */,
+				020906BD23ED7BB6009A7E47 /* HeaderProfile.xib in Resources */,
+				02CA898223E059A200D011EF /* RegistrationCell.xib in Resources */,
+				0207A25323DC7D490093F989 /* ButtonCell.xib in Resources */,
+				0207A24923DC6EA00093F989 /* LogoCell.xib in Resources */,
+				0299C25823F02BBD00B87212 /* stheiti_light.ttf in Resources */,
+				020906C123ED9C26009A7E47 /* ProfileButton.xib in Resources */,
+				0207A21D23DC59340093F989 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0207A22623DC59350093F989 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0207A23123DC59350093F989 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D7E88BCD2337E11DA05DB39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AgrarForum/Pods-AgrarForum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AgrarForum/Pods-AgrarForum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AgrarForum/Pods-AgrarForum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95F35D4ABC479F71C23DD5A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgrarForum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4F9A1448855DDB86D243F77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgrarForum-AgrarForumUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6A5B5968EF399566CDE19D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgrarForumTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D79B5DD4E041DE018A03EBB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AgrarForum-AgrarForumUITests/Pods-AgrarForum-AgrarForumUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AgrarForum-AgrarForumUITests/Pods-AgrarForum-AgrarForumUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AgrarForum-AgrarForumUITests/Pods-AgrarForum-AgrarForumUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0207A20E23DC59340093F989 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02CA899323E2E76100D011EF /* CheckBoxCell.swift in Sources */,
+				0207A21A23DC59340093F989 /* TableViewController.swift in Sources */,
+				02CCAE0D23F02CD40099A7B2 /* Status.swift in Sources */,
+				02CCAE2123FBD77E0099A7B2 /* HeaderSearchCell.swift in Sources */,
+				0207A21623DC59340093F989 /* AppDelegate.swift in Sources */,
+				020906C023ED9C26009A7E47 /* ProfileButton.swift in Sources */,
+				020906C823F028A8009A7E47 /* ApiHelper.swift in Sources */,
+				0207A24823DC6EA00093F989 /* LogoCell.swift in Sources */,
+				02CA898123E059A200D011EF /* RegistrationCell.swift in Sources */,
+				02CCAE1623F6B0220099A7B2 /* QuestionsHeaderCell.swift in Sources */,
+				0207A25623DD9E760093F989 /* EmptyCell.swift in Sources */,
+				02CCAE1D23FA8B040099A7B2 /* SearchVC.swift in Sources */,
+				0207A25A23DDA5630093F989 /* TitleAndDateCell.swift in Sources */,
+				02CA898423E0748500D011EF /* RegistrationViewController.swift in Sources */,
+				020906C423EDA2D3009A7E47 /* InfoCell.swift in Sources */,
+				0207A21823DC59340093F989 /* SceneDelegate.swift in Sources */,
+				020906B723E9666B009A7E47 /* PickerCell.swift in Sources */,
+				0207A26123DDA5FE0093F989 /* TitleAndDate.swift in Sources */,
+				0207A25E23DDA59C0093F989 /* QuestionVC.swift in Sources */,
+				02CCAE1923F6CAA30099A7B2 /* StatusUser.swift in Sources */,
+				0207A25223DC7D490093F989 /* ButtonCell.swift in Sources */,
+				02CA898F23E0765900D011EF /* RegistrationLabel.swift in Sources */,
+				020906BC23ED7BB6009A7E47 /* HeaderProfile.swift in Sources */,
+				02CA897A23DDAE2A00D011EF /* TextFieldCell.swift in Sources */,
+				02CCAE0F23F2BB670099A7B2 /* ProfileVC.swift in Sources */,
+				02CA898B23E0759200D011EF /* AgrarForumLabelCell.swift in Sources */,
+				02CCAE1123F6A7B20099A7B2 /* User.swift in Sources */,
+				02CCAE2423FBDBC80099A7B2 /* ProfileUserVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0207A22423DC59350093F989 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0207A22D23DC59350093F989 /* AgrarForumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0207A22F23DC59350093F989 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0207A23823DC59350093F989 /* AgrarForumUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0207A22A23DC59350093F989 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0207A21123DC59340093F989 /* AgrarForum */;
+			targetProxy = 0207A22923DC59350093F989 /* PBXContainerItemProxy */;
+		};
+		0207A23523DC59350093F989 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0207A21123DC59340093F989 /* AgrarForum */;
+			targetProxy = 0207A23423DC59350093F989 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0207A21B23DC59340093F989 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0207A21C23DC59340093F989 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0207A22023DC59350093F989 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0207A22123DC59350093F989 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0207A23A23DC59350093F989 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0207A23B23DC59350093F989 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0207A23D23DC59350093F989 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16E0F65717B82D1C71B40D6E /* Pods-AgrarForum.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AgrarForum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = atm.AgrarForum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0207A23E23DC59350093F989 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0048180FF66F98DADBAB0BA4 /* Pods-AgrarForum.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AgrarForum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = atm.AgrarForum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0207A24023DC59350093F989 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2F9EBCD96BC5D31CE9F928A /* Pods-AgrarForumTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AgrarForumTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = atm.AgrarForumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AgrarForum.app/AgrarForum";
+			};
+			name = Debug;
+		};
+		0207A24123DC59350093F989 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D83E6A80BE732417084A907A /* Pods-AgrarForumTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AgrarForumTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = atm.AgrarForumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AgrarForum.app/AgrarForum";
+			};
+			name = Release;
+		};
+		0207A24323DC59350093F989 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A80C7068037DECEF7E738EE0 /* Pods-AgrarForum-AgrarForumUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AgrarForumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = atm.AgrarForumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AgrarForum;
+			};
+			name = Debug;
+		};
+		0207A24423DC59350093F989 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EAB2E8076FDF716855ED9D5 /* Pods-AgrarForum-AgrarForumUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AgrarForumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = atm.AgrarForumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AgrarForum;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0207A20D23DC59340093F989 /* Build configuration list for PBXProject "AgrarForum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0207A23A23DC59350093F989 /* Debug */,
+				0207A23B23DC59350093F989 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0207A23C23DC59350093F989 /* Build configuration list for PBXNativeTarget "AgrarForum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0207A23D23DC59350093F989 /* Debug */,
+				0207A23E23DC59350093F989 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0207A23F23DC59350093F989 /* Build configuration list for PBXNativeTarget "AgrarForumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0207A24023DC59350093F989 /* Debug */,
+				0207A24123DC59350093F989 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0207A24223DC59350093F989 /* Build configuration list for PBXNativeTarget "AgrarForumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0207A24323DC59350093F989 /* Debug */,
+				0207A24423DC59350093F989 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0207A20A23DC59340093F989 /* Project object */;
+}
