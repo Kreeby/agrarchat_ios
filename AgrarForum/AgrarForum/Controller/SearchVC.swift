@@ -17,6 +17,7 @@ class SearchVC: UITableViewController, UITextFieldDelegate {
     var filterList = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("SALAM")
         tableView.register(UINib(nibName: "HeaderSearchCell", bundle: nil), forCellReuseIdentifier: "HeaderSearchCell")
         ApiHelper.shared.searchUsers(success: { usersList in
             self.arrUsers = usersList
@@ -44,6 +45,7 @@ class SearchVC: UITableViewController, UITextFieldDelegate {
         searchTxt = cell.textField
         
         cell.textField.addTarget(self, action: #selector(SearchControl), for: .editingChanged)
+        self.tableView.reloadData()
         return cell
     }
     
@@ -53,6 +55,7 @@ class SearchVC: UITableViewController, UITextFieldDelegate {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TitleAndDateCell", for: indexPath) as! TitleAndDateCell
+        
         
         cell.title.text = arrUsers[indexPath.row].username
         cell.date.text = arrUsers[indexPath.row].category
@@ -67,6 +70,7 @@ class SearchVC: UITableViewController, UITextFieldDelegate {
     }
     
     @objc func SearchControl() {
+        print("SALAM")
         let searchText = searchTxt?.text
         filterList.removeAll()
         print(searchText as Any)
