@@ -12,7 +12,7 @@ import UIKit
 class ProfileVC: UITableViewController {
     
     var id: Int?
-    
+    var granted: String?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,7 +39,7 @@ class ProfileVC: UITableViewController {
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileButton", for: indexPath) as! ProfileButton
-            
+            cell.button.setTitle("Suallara bax", for: .normal)
             cell.trailinConst.constant = 88
             cell.leadingConst.constant = 88
             cell.button.layer.cornerRadius = 15
@@ -73,10 +73,15 @@ class ProfileVC: UITableViewController {
     @objc func showQuestions(sender: UIButton) {
     //        self.performSegue(withIdentifier: "register", sender: self)
 //           self.performSegue(withIdentifier: "showQuestions", sender: self)
-        
-        let vc = storyboard?.instantiateViewController(withIdentifier: "QuestionVC") as! QuestionVC
-        vc.id = self.id
-        navigationController?.show(vc, sender: nil)
+        if(granted == "0") {
+            
+        }
+        else {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "QuestionVC") as! QuestionVC
+            vc.id = self.id
+            navigationController?.show(vc, sender: nil)
+            
+        }
         
         
         }

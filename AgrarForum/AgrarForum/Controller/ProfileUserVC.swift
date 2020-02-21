@@ -11,7 +11,7 @@ import UIKit
 
 class ProfileUserVC: UITableViewController {
     
-    var id: Int?
+    var granted: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,7 +69,8 @@ class ProfileUserVC: UITableViewController {
     @objc func searchUsers(sender: UIButton) {
         
             let vc = storyboard?.instantiateViewController(withIdentifier: "SearchVC") as! SearchVC
-            
+            vc.granted = self.granted
+        
             navigationController?.show(vc, sender: nil)
             
     }

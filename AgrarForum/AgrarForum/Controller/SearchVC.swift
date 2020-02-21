@@ -10,23 +10,27 @@ import Foundation
 import UIKit
 
 class SearchVC: UITableViewController, UITextFieldDelegate {
-    
+    var granted: String?
+    var id_prof: String?
     var searchTxt: UITextField?
     var arrUsers = [User]()
     var names:[String] = Array()
-    var filterList = [String]()
+    var namesList = [String]()
+    var counter = 1
     override func viewDidLoad() {
         super.viewDidLoad()
         print("SALAM")
         tableView.register(UINib(nibName: "HeaderSearchCell", bundle: nil), forCellReuseIdentifier: "HeaderSearchCell")
         ApiHelper.shared.searchUsers(success: { usersList in
             self.arrUsers = usersList
+            for str in self.arrUsers {
+                self.names.append(str.username!)
+                
+            }
             self.tableView.register(UINib(nibName: "\(TitleAndDateCell.self)", bundle: nil), forCellReuseIdentifier: "TitleAndDateCell")
             self.tableView.reloadData()
             
-            for str in self.arrUsers {
-                self.names.append(str.username!)
-            }
+            
             
             
             
@@ -39,25 +43,34 @@ class SearchVC: UITableViewController, UITextFieldDelegate {
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        self.tableView.sectionHeaderHeight = 120
+        self.tableView.sectionHeaderHeight = 140
         let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderSearchCell") as! HeaderSearchCell
         
         searchTxt = cell.textField
-        
+        cell.textField.becomeFirstResponder()
         cell.textField.addTarget(self, action: #selector(SearchControl), for: .editingChanged)
-        self.tableView.reloadData()
+        
         return cell
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrUsers.count
+        if(counter == 1) {
+            return arrUsers.count
+        }
+        return self.namesList.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TitleAndDateCell", for: indexPath) as! TitleAndDateCell
         
-        
-        cell.title.text = arrUsers[indexPath.row].username
+        if(counter == 1) {
+            cell.title.text = arrUsers[indexPath.row].username
+            
+        }
+        else {
+            cell.title.text = namesList[indexPath.row]
+            
+        }
         cell.date.text = arrUsers[indexPath.row].category
         
         cell.circle.layer.cornerRadius = cell.circle.frame.width/2
@@ -69,21 +82,33 @@ class SearchVC: UITableViewController, UITextFieldDelegate {
         return 60
     }
     
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let id_p = arrUsers[indexPath.row].id
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileVC") as! ProfileVC
+        vc.granted = self.granted
+        vc.id = id_p
+        self.navigationController?.show(vc, sender: nil)
+        
+    }
     @objc func SearchControl() {
-        print("SALAM")
+        
         let searchText = searchTxt?.text
-        filterList.removeAll()
+        namesList.removeAll()
+        
         print(searchText as Any)
         
         if searchText == "" || searchText == " " {
             print("empty search")
-            filterList.removeAll()
-            return
+            counter = 1
+            tableView.reloadData()
+            
         }
         
         
         
-        
+        print(counter)
         for item in names {
             
             let text = searchText!.lowercased()
@@ -91,13 +116,18 @@ class SearchVC: UITableViewController, UITextFieldDelegate {
 
             if isArrayContain != nil {
                 print("success")
-                filterList.append(item)
+                counter+=1
+                namesList.append(item)
+                tableView.reloadData()
                 if(searchText == "") {
-                    filterList.removeAll()
+                    namesList.removeAll()
+                    
                 }
             }
+            
         }
-        
-        print(filterList)
+        print(namesList)
     }
+    
+
 }

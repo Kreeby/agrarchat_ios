@@ -10,6 +10,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
     var id: Int?
+    var granted: String?
     static var Login:String?
     static var Password:String?
     var LoginCell: TextFieldCell?
@@ -149,7 +150,7 @@ class TableViewController: UITableViewController {
 
         ApiHelper.shared.login(email:LoginCell!.textField.text!, password: PasswordCell!.textField.text!, success: { id_s in
             self.id = id_s.id
-            
+            self.granted = id_s.granted
             if(id_s.granted!.contains("1")) {
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileVC") as! ProfileVC
                 
@@ -158,7 +159,7 @@ class TableViewController: UITableViewController {
             }
             else if(id_s.granted!.contains("0")) {
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileUserVC") as! ProfileUserVC
-                
+                vc.granted = self.granted
 //                vc.id = self.id
                 self.navigationController?.show(vc, sender: nil)
             }

@@ -53,10 +53,10 @@
 		02CCAE1623F6B0220099A7B2 /* QuestionsHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCAE1423F6B0220099A7B2 /* QuestionsHeaderCell.swift */; };
 		02CCAE1723F6B0220099A7B2 /* QuestionsHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02CCAE1523F6B0220099A7B2 /* QuestionsHeaderCell.xib */; };
 		02CCAE1923F6CAA30099A7B2 /* StatusUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCAE1823F6CAA30099A7B2 /* StatusUser.swift */; };
-		02CCAE1D23FA8B040099A7B2 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCAE1C23FA8B040099A7B2 /* SearchVC.swift */; };
 		02CCAE2123FBD77E0099A7B2 /* HeaderSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCAE1F23FBD77E0099A7B2 /* HeaderSearchCell.swift */; };
 		02CCAE2223FBD77E0099A7B2 /* HeaderSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02CCAE2023FBD77E0099A7B2 /* HeaderSearchCell.xib */; };
 		02CCAE2423FBDBC80099A7B2 /* ProfileUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCAE2323FBDBC80099A7B2 /* ProfileUserVC.swift */; };
+		02CCAE2823FD608A0099A7B2 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCAE2723FD608A0099A7B2 /* SearchVC.swift */; };
 		3E1874D444FD92E770DEE1D4 /* Pods_AgrarForum_AgrarForumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7449D37FA15885F8E7AB5B /* Pods_AgrarForum_AgrarForumUITests.framework */; };
 		588E202C4FC61579A9AC964A /* Pods_AgrarForum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAD0C21B373E5934FE8E427 /* Pods_AgrarForum.framework */; };
 		6F3C09457AF0583274C94EE9 /* Pods_AgrarForumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E11958AA3F068E819497C8D /* Pods_AgrarForumTests.framework */; };
@@ -133,10 +133,10 @@
 		02CCAE1423F6B0220099A7B2 /* QuestionsHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsHeaderCell.swift; sourceTree = "<group>"; };
 		02CCAE1523F6B0220099A7B2 /* QuestionsHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionsHeaderCell.xib; sourceTree = "<group>"; };
 		02CCAE1823F6CAA30099A7B2 /* StatusUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusUser.swift; sourceTree = "<group>"; };
-		02CCAE1C23FA8B040099A7B2 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		02CCAE1F23FBD77E0099A7B2 /* HeaderSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSearchCell.swift; sourceTree = "<group>"; };
 		02CCAE2023FBD77E0099A7B2 /* HeaderSearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderSearchCell.xib; sourceTree = "<group>"; };
 		02CCAE2323FBDBC80099A7B2 /* ProfileUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserVC.swift; sourceTree = "<group>"; };
+		02CCAE2723FD608A0099A7B2 /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		16E0F65717B82D1C71B40D6E /* Pods-AgrarForum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgrarForum.debug.xcconfig"; path = "Target Support Files/Pods-AgrarForum/Pods-AgrarForum.debug.xcconfig"; sourceTree = "<group>"; };
 		3E11958AA3F068E819497C8D /* Pods_AgrarForumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgrarForumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EAB2E8076FDF716855ED9D5 /* Pods-AgrarForum-AgrarForumUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgrarForum-AgrarForumUITests.release.xcconfig"; path = "Target Support Files/Pods-AgrarForum-AgrarForumUITests/Pods-AgrarForum-AgrarForumUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -247,11 +247,11 @@
 		0207A25C23DDA57F0093F989 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				02CCAE2723FD608A0099A7B2 /* SearchVC.swift */,
 				0207A21923DC59340093F989 /* TableViewController.swift */,
 				0207A25D23DDA59C0093F989 /* QuestionVC.swift */,
 				02CA898323E0748500D011EF /* RegistrationViewController.swift */,
 				02CCAE0E23F2BB670099A7B2 /* ProfileVC.swift */,
-				02CCAE1C23FA8B040099A7B2 /* SearchVC.swift */,
 				02CCAE2323FBDBC80099A7B2 /* ProfileUserVC.swift */,
 			);
 			path = Controller;
@@ -657,7 +657,6 @@
 				02CA898123E059A200D011EF /* RegistrationCell.swift in Sources */,
 				02CCAE1623F6B0220099A7B2 /* QuestionsHeaderCell.swift in Sources */,
 				0207A25623DD9E760093F989 /* EmptyCell.swift in Sources */,
-				02CCAE1D23FA8B040099A7B2 /* SearchVC.swift in Sources */,
 				0207A25A23DDA5630093F989 /* TitleAndDateCell.swift in Sources */,
 				02CA898423E0748500D011EF /* RegistrationViewController.swift in Sources */,
 				020906C423EDA2D3009A7E47 /* InfoCell.swift in Sources */,
@@ -667,6 +666,7 @@
 				0207A25E23DDA59C0093F989 /* QuestionVC.swift in Sources */,
 				02CCAE1923F6CAA30099A7B2 /* StatusUser.swift in Sources */,
 				0207A25223DC7D490093F989 /* ButtonCell.swift in Sources */,
+				02CCAE2823FD608A0099A7B2 /* SearchVC.swift in Sources */,
 				02CA898F23E0765900D011EF /* RegistrationLabel.swift in Sources */,
 				020906BC23ED7BB6009A7E47 /* HeaderProfile.swift in Sources */,
 				02CA897A23DDAE2A00D011EF /* TextFieldCell.swift in Sources */,
