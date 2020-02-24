@@ -10,7 +10,7 @@ import UIKit
 
 class QuestionsFooterCell: UITableViewCell {
 
-    @IBOutlet weak var button: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

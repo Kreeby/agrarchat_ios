@@ -57,6 +57,8 @@
 		02CCAE2223FBD77E0099A7B2 /* HeaderSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02CCAE2023FBD77E0099A7B2 /* HeaderSearchCell.xib */; };
 		02CCAE2423FBDBC80099A7B2 /* ProfileUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCAE2323FBDBC80099A7B2 /* ProfileUserVC.swift */; };
 		02CCAE2823FD608A0099A7B2 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCAE2723FD608A0099A7B2 /* SearchVC.swift */; };
+		02CCAE2B23FFF4610099A7B2 /* QuestionsFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCAE2923FFF4610099A7B2 /* QuestionsFooterCell.swift */; };
+		02CCAE2C23FFF4610099A7B2 /* QuestionsFooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02CCAE2A23FFF4610099A7B2 /* QuestionsFooterCell.xib */; };
 		3E1874D444FD92E770DEE1D4 /* Pods_AgrarForum_AgrarForumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7449D37FA15885F8E7AB5B /* Pods_AgrarForum_AgrarForumUITests.framework */; };
 		588E202C4FC61579A9AC964A /* Pods_AgrarForum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAD0C21B373E5934FE8E427 /* Pods_AgrarForum.framework */; };
 		6F3C09457AF0583274C94EE9 /* Pods_AgrarForumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E11958AA3F068E819497C8D /* Pods_AgrarForumTests.framework */; };
@@ -137,6 +139,8 @@
 		02CCAE2023FBD77E0099A7B2 /* HeaderSearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderSearchCell.xib; sourceTree = "<group>"; };
 		02CCAE2323FBDBC80099A7B2 /* ProfileUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserVC.swift; sourceTree = "<group>"; };
 		02CCAE2723FD608A0099A7B2 /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		02CCAE2923FFF4610099A7B2 /* QuestionsFooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsFooterCell.swift; sourceTree = "<group>"; };
+		02CCAE2A23FFF4610099A7B2 /* QuestionsFooterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionsFooterCell.xib; sourceTree = "<group>"; };
 		16E0F65717B82D1C71B40D6E /* Pods-AgrarForum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgrarForum.debug.xcconfig"; path = "Target Support Files/Pods-AgrarForum/Pods-AgrarForum.debug.xcconfig"; sourceTree = "<group>"; };
 		3E11958AA3F068E819497C8D /* Pods_AgrarForumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgrarForumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EAB2E8076FDF716855ED9D5 /* Pods-AgrarForum-AgrarForumUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgrarForum-AgrarForumUITests.release.xcconfig"; path = "Target Support Files/Pods-AgrarForum-AgrarForumUITests/Pods-AgrarForum-AgrarForumUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -344,6 +348,7 @@
 		02CCAE1223F6AFF40099A7B2 /* Questions */ = {
 			isa = PBXGroup;
 			children = (
+				02CCAE2D240008D30099A7B2 /* QuestionForm */,
 				02CCAE1323F6AFFF0099A7B2 /* QuestionsOfP */,
 			);
 			path = Questions;
@@ -354,6 +359,8 @@
 			children = (
 				02CCAE1423F6B0220099A7B2 /* QuestionsHeaderCell.swift */,
 				02CCAE1523F6B0220099A7B2 /* QuestionsHeaderCell.xib */,
+				02CCAE2923FFF4610099A7B2 /* QuestionsFooterCell.swift */,
+				02CCAE2A23FFF4610099A7B2 /* QuestionsFooterCell.xib */,
 			);
 			path = QuestionsOfP;
 			sourceTree = "<group>";
@@ -365,6 +372,13 @@
 				02CCAE2023FBD77E0099A7B2 /* HeaderSearchCell.xib */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		02CCAE2D240008D30099A7B2 /* QuestionForm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = QuestionForm;
 			sourceTree = "<group>";
 		};
 		AA8C16A7E952AAA70B4AD252 /* Frameworks */ = {
@@ -519,6 +533,7 @@
 				0299C25823F02BBD00B87212 /* stheiti_light.ttf in Resources */,
 				020906C123ED9C26009A7E47 /* ProfileButton.xib in Resources */,
 				0207A21D23DC59340093F989 /* Main.storyboard in Resources */,
+				02CCAE2C23FFF4610099A7B2 /* QuestionsFooterCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,6 +679,7 @@
 				020906B723E9666B009A7E47 /* PickerCell.swift in Sources */,
 				0207A26123DDA5FE0093F989 /* TitleAndDate.swift in Sources */,
 				0207A25E23DDA59C0093F989 /* QuestionVC.swift in Sources */,
+				02CCAE2B23FFF4610099A7B2 /* QuestionsFooterCell.swift in Sources */,
 				02CCAE1923F6CAA30099A7B2 /* StatusUser.swift in Sources */,
 				0207A25223DC7D490093F989 /* ButtonCell.swift in Sources */,
 				02CCAE2823FD608A0099A7B2 /* SearchVC.swift in Sources */,

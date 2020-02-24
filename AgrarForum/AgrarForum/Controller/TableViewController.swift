@@ -153,7 +153,7 @@ class TableViewController: UITableViewController {
             self.granted = id_s.granted
             if(id_s.granted!.contains("1")) {
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileVC") as! ProfileVC
-                
+                vc.granted = self.granted
                 vc.id = self.id
                 self.navigationController?.show(vc, sender: nil)
             }
@@ -161,6 +161,7 @@ class TableViewController: UITableViewController {
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileUserVC") as! ProfileUserVC
                 vc.granted = self.granted
 //                vc.id = self.id
+
                 self.navigationController?.show(vc, sender: nil)
             }
             

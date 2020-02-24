@@ -48,16 +48,27 @@
         <scene sceneID="hb7-lF-pRD">
             <objects>
                 <tableViewController storyboardIdentifier="QuestionVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="j25-e7-DoS" customClass="QuestionVC" customModule="AgrarForum" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Cgi-XE-x5d">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="26" sectionFooterHeight="28" id="Cgi-XE-x5d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dUf-KZ-prC">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.67450980390000004" green="0.80784313730000001" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
                         <connections>
                             <outlet property="dataSource" destination="j25-e7-DoS" id="d9c-MQ-Pju"/>
                             <outlet property="delegate" destination="j25-e7-DoS" id="Rgq-hU-b6E"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="4XV-Ng-vZ3"/>
+                    <connections>
+                        <outlet property="button" destination="dUf-KZ-prC" id="wih-ah-R0W"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mtz-wD-3hU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

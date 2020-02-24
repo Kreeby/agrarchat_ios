@@ -74,15 +74,18 @@ class ProfileVC: UITableViewController {
     //        self.performSegue(withIdentifier: "register", sender: self)
 //           self.performSegue(withIdentifier: "showQuestions", sender: self)
         if(granted == "0") {
-            
+            let vc = storyboard?.instantiateViewController(withIdentifier: "QuestionVC") as! QuestionVC
+            vc.id = self.id
+            vc.granted = self.granted
+            navigationController?.show(vc, sender: nil)
         }
         else {
             let vc = storyboard?.instantiateViewController(withIdentifier: "QuestionVC") as! QuestionVC
             vc.id = self.id
+            vc.granted = self.granted
             navigationController?.show(vc, sender: nil)
             
         }
-        
         
         }
     
