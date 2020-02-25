@@ -16,7 +16,9 @@ class SearchVC: UITableViewController, UITextFieldDelegate {
     var arrUsers = [User]()
     var names:[String] = Array()
     var namesList = [String]()
+    var pos = [Int]()
     var counter = 1
+    var id_p: Int?
     override func viewDidLoad() {
         super.viewDidLoad()
         print("SALAM")
@@ -25,7 +27,7 @@ class SearchVC: UITableViewController, UITextFieldDelegate {
             self.arrUsers = usersList
             for str in self.arrUsers {
                 self.names.append(str.username!)
-                
+                self.pos.append(str.id!)
             }
             self.tableView.register(UINib(nibName: "\(TitleAndDateCell.self)", bundle: nil), forCellReuseIdentifier: "TitleAndDateCell")
             self.tableView.reloadData()
@@ -46,7 +48,9 @@ class SearchVC: UITableViewController, UITextFieldDelegate {
         self.tableView.sectionHeaderHeight = 140
         let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderSearchCell") as! HeaderSearchCell
         
+        
         searchTxt = cell.textField
+        
         cell.textField.becomeFirstResponder()
         cell.textField.addTarget(self, action: #selector(SearchControl), for: .editingChanged)
         
@@ -54,6 +58,7 @@ class SearchVC: UITableViewController, UITextFieldDelegate {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         if(counter == 1) {
             return arrUsers.count
         }
@@ -84,11 +89,14 @@ class SearchVC: UITableViewController, UITextFieldDelegate {
     
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let id_p = arrUsers[indexPath.row].id
         
+        print(arrUsers[indexPath.row])
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileVC") as! ProfileVC
         vc.granted = self.granted
+        print(pos[indexPath.row])
+        id_p = pos[indexPath.row]
         vc.id = id_p
+        
         self.navigationController?.show(vc, sender: nil)
         
     }
@@ -96,8 +104,7 @@ class SearchVC: UITableViewController, UITextFieldDelegate {
         
         let searchText = searchTxt?.text
         namesList.removeAll()
-        
-        print(searchText as Any)
+        pos.removeAll()
         
         if searchText == "" || searchText == " " {
             print("empty search")
@@ -108,7 +115,7 @@ class SearchVC: UITableViewController, UITextFieldDelegate {
         
         
         
-        print(counter)
+        
         for item in names {
             
             let text = searchText!.lowercased()
@@ -118,16 +125,21 @@ class SearchVC: UITableViewController, UITextFieldDelegate {
                 print("success")
                 counter+=1
                 namesList.append(item)
+                pos.append(names.firstIndex(of: item)!)
+                print(pos)
                 tableView.reloadData()
                 if(searchText == "") {
                     namesList.removeAll()
-                    
+                    pos.removeAll()
                 }
             }
             
         }
-        print(namesList)
+        
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        
+        tableView.reloadData()
+    }
 }
