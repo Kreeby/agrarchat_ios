@@ -21,9 +21,10 @@ class SearchVC: UITableViewController, UITextFieldDelegate {
     var id_p: Int?
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("SALAM")
+        
         tableView.register(UINib(nibName: "HeaderSearchCell", bundle: nil), forCellReuseIdentifier: "HeaderSearchCell")
         ApiHelper.shared.searchUsers(success: { usersList in
+            print("I AM SENDING...")
             self.arrUsers = usersList
             for str in self.arrUsers {
                 self.names.append(str.username!)
@@ -45,6 +46,7 @@ class SearchVC: UITableViewController, UITextFieldDelegate {
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        print("I AM GIVING..")
         self.tableView.sectionHeaderHeight = 140
         let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderSearchCell") as! HeaderSearchCell
         
@@ -66,6 +68,7 @@ class SearchVC: UITableViewController, UITextFieldDelegate {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("I AM GIVING")
         let cell = tableView.dequeueReusableCell(withIdentifier: "TitleAndDateCell", for: indexPath) as! TitleAndDateCell
         
         if(counter == 1) {
@@ -93,8 +96,9 @@ class SearchVC: UITableViewController, UITextFieldDelegate {
         print(arrUsers[indexPath.row])
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileVC") as! ProfileVC
         vc.granted = self.granted
-        print(pos[indexPath.row])
+//        print(pos[indexPath.row])
         id_p = pos[indexPath.row]
+            
         vc.id = id_p
         
         self.navigationController?.show(vc, sender: nil)
@@ -139,7 +143,6 @@ class SearchVC: UITableViewController, UITextFieldDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
         tableView.reloadData()
     }
 }

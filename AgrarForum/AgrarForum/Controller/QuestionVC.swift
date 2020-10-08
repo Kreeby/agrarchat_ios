@@ -12,14 +12,15 @@ class QuestionVC: UITableViewController {
     
     @IBOutlet weak var button: UIButton!
     var arrQuestions = [TitleAndDate]()
-    
+    var arrElements: QuestionAndAnswer?
     var id: Int?
+    var pos = [Int]()
     var granted: String?
     override func viewDidLoad() {
         super.viewDidLoad()
         
         button.roundedButton()
-        
+        button.addTarget(self, action: #selector(QuestionVC.askQuestion), for: .touchUpInside)
         button.setTitle("Yeni sual ver", for: .normal)
         tableView.register(UINib(nibName: "QuestionsHeaderCell", bundle: nil), forCellReuseIdentifier: "QuestionsHeaderCell")
         tableView.register(UINib(nibName: "QuestionsFooterCell", bundle: nil), forCellReuseIdentifier: "QuestionsFooterCell")
@@ -48,18 +49,6 @@ class QuestionVC: UITableViewController {
         return cell
     }
     
-    //    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-    //
-    //        if(granted == "0") {
-    //            self.tableView.sectionFooterHeight = 140
-    //
-    //            let cell = tableView.dequeueReusableCell(withIdentifier: "QuestionsFooterCell") as! QuestionsFooterCell
-    //            return cell
-    //        }
-    //
-    //        self.tableView.sectionFooterHeight = 0
-    //        return nil
-    //    }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return arrQuestions.count
@@ -82,11 +71,34 @@ class QuestionVC: UITableViewController {
         return 60
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let id_p = arrQuestions[indexPath.row].id
+        
+        
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "QuestionSelf") as! QuestionSelf
+        vc.granted = self.granted
+        print(arrElements)
+        vc.arrElements = arrElements
+        vc.id = id_p
+        navigationController?.show(vc, sender: nil)
+    }
+    
     var heightConstraint:CGFloat = 120.0
     
     var lastContentOffset: CGFloat = 0.0
     let maxHeaderHeight: CGFloat = 115.0
     
+    @objc func askQuestion(sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "QuestionFormVC") as! QuestionFormVC
+        
+        
+        vc.id_self = self.id
+        vc.granted = self.granted
+        navigationController?.show(vc, sender: nil)
+    }
+
 }
 
 
@@ -101,3 +113,5 @@ extension UIButton{
         layer.mask = maskLayer1
     }
 }
+
+

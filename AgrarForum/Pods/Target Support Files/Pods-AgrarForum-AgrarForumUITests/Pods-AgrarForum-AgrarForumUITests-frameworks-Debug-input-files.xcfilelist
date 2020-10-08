@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-AgrarForum-AgrarForumUITests/Pods-AgrarForum-AgrarForumUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework
 ${BUILT_PRODUCTS_DIR}/ModernSearchBar/ModernSearchBar.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework

@@ -35,6 +35,21 @@
 		020906C423EDA2D3009A7E47 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020906C223EDA2D3009A7E47 /* InfoCell.swift */; };
 		020906C523EDA2D3009A7E47 /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 020906C323EDA2D3009A7E47 /* InfoCell.xib */; };
 		020906C823F028A8009A7E47 /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020906C723F028A8009A7E47 /* ApiHelper.swift */; };
+		022D1EAE2457345200418D37 /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D1EAC2457345200418D37 /* QuestionCell.swift */; };
+		022D1EAF2457345200418D37 /* QuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022D1EAD2457345200418D37 /* QuestionCell.xib */; };
+		022D1EB32457378900418D37 /* QuestionSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D1EB22457378900418D37 /* QuestionSelf.swift */; };
+		022D1EB5245FF56B00418D37 /* QuestionAndAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D1EB4245FF56B00418D37 /* QuestionAndAnswer.swift */; };
+		022D1EB7245FF6AC00418D37 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D1EB6245FF6AC00418D37 /* Answer.swift */; };
+		022D1EB9245FF8EC00418D37 /* StatusQuestionAndAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D1EB8245FF8EC00418D37 /* StatusQuestionAndAnswer.swift */; };
+		025770FF24053A8900CE62CD /* QuestionFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025770FD24053A8900CE62CD /* QuestionFormCell.swift */; };
+		0257710024053A8900CE62CD /* QuestionFormCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 025770FE24053A8900CE62CD /* QuestionFormCell.xib */; };
+		0257710224053B8600CE62CD /* QuestionFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0257710124053B8600CE62CD /* QuestionFormVC.swift */; };
+		0257710724053C4A00CE62CD /* SualLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0257710524053C4A00CE62CD /* SualLabelCell.swift */; };
+		0257710824053C4A00CE62CD /* SualLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0257710624053C4A00CE62CD /* SualLabelCell.xib */; };
+		0257710F2405498E00CE62CD /* QuestionTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0257710D2405498E00CE62CD /* QuestionTextFieldCell.swift */; };
+		025771102405498E00CE62CD /* QuestionTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0257710E2405498E00CE62CD /* QuestionTextFieldCell.xib */; };
+		0257711224065B2400CE62CD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0257711124065B2400CE62CD /* Question.swift */; };
+		025771142434ED3300CE62CD /* StatusQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025771132434ED3300CE62CD /* StatusQuestion.swift */; };
 		0299C25823F02BBD00B87212 /* stheiti_light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02CA897C23E04C9000D011EF /* stheiti_light.ttf */; };
 		0299C25923F02BBF00B87212 /* stheiti_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02CA897D23E04C9000D011EF /* stheiti_medium.ttf */; };
 		02CA897A23DDAE2A00D011EF /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CA897923DDAE2A00D011EF /* TextFieldCell.swift */; };
@@ -117,6 +132,21 @@
 		020906C223EDA2D3009A7E47 /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
 		020906C323EDA2D3009A7E47 /* InfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCell.xib; sourceTree = "<group>"; };
 		020906C723F028A8009A7E47 /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
+		022D1EAC2457345200418D37 /* QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
+		022D1EAD2457345200418D37 /* QuestionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionCell.xib; sourceTree = "<group>"; };
+		022D1EB22457378900418D37 /* QuestionSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionSelf.swift; sourceTree = "<group>"; };
+		022D1EB4245FF56B00418D37 /* QuestionAndAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAndAnswer.swift; sourceTree = "<group>"; };
+		022D1EB6245FF6AC00418D37 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		022D1EB8245FF8EC00418D37 /* StatusQuestionAndAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusQuestionAndAnswer.swift; sourceTree = "<group>"; };
+		025770FD24053A8900CE62CD /* QuestionFormCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFormCell.swift; sourceTree = "<group>"; };
+		025770FE24053A8900CE62CD /* QuestionFormCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionFormCell.xib; sourceTree = "<group>"; };
+		0257710124053B8600CE62CD /* QuestionFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFormVC.swift; sourceTree = "<group>"; };
+		0257710524053C4A00CE62CD /* SualLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SualLabelCell.swift; sourceTree = "<group>"; };
+		0257710624053C4A00CE62CD /* SualLabelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SualLabelCell.xib; sourceTree = "<group>"; };
+		0257710D2405498E00CE62CD /* QuestionTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTextFieldCell.swift; sourceTree = "<group>"; };
+		0257710E2405498E00CE62CD /* QuestionTextFieldCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionTextFieldCell.xib; sourceTree = "<group>"; };
+		0257711124065B2400CE62CD /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		025771132434ED3300CE62CD /* StatusQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusQuestion.swift; sourceTree = "<group>"; };
 		02CA897923DDAE2A00D011EF /* TextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
 		02CA897C23E04C9000D011EF /* stheiti_light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = stheiti_light.ttf; path = AgrarForum/Resources/stheiti_light.ttf; sourceTree = SOURCE_ROOT; };
 		02CA897D23E04C9000D011EF /* stheiti_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = stheiti_medium.ttf; path = AgrarForum/Resources/stheiti_medium.ttf; sourceTree = SOURCE_ROOT; };
@@ -240,6 +270,7 @@
 		0207A24523DC6E920093F989 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				025770FC24053A4F00CE62CD /* Answers */,
 				02CCAE1E23FBD7660099A7B2 /* Search */,
 				02CCAE1223F6AFF40099A7B2 /* Questions */,
 				020906B923ED7B9E009A7E47 /* Profile */,
@@ -257,6 +288,8 @@
 				02CA898323E0748500D011EF /* RegistrationViewController.swift */,
 				02CCAE0E23F2BB670099A7B2 /* ProfileVC.swift */,
 				02CCAE2323FBDBC80099A7B2 /* ProfileUserVC.swift */,
+				0257710124053B8600CE62CD /* QuestionFormVC.swift */,
+				022D1EB22457378900418D37 /* QuestionSelf.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -268,6 +301,11 @@
 				02CCAE0C23F02CD40099A7B2 /* Status.swift */,
 				02CCAE1023F6A7B20099A7B2 /* User.swift */,
 				02CCAE1823F6CAA30099A7B2 /* StatusUser.swift */,
+				0257711124065B2400CE62CD /* Question.swift */,
+				025771132434ED3300CE62CD /* StatusQuestion.swift */,
+				022D1EB4245FF56B00418D37 /* QuestionAndAnswer.swift */,
+				022D1EB6245FF6AC00418D37 /* Answer.swift */,
+				022D1EB8245FF8EC00418D37 /* StatusQuestionAndAnswer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -291,6 +329,19 @@
 				020906C723F028A8009A7E47 /* ApiHelper.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		025770FC24053A4F00CE62CD /* Answers */ = {
+			isa = PBXGroup;
+			children = (
+				025770FD24053A8900CE62CD /* QuestionFormCell.swift */,
+				025770FE24053A8900CE62CD /* QuestionFormCell.xib */,
+				0257710524053C4A00CE62CD /* SualLabelCell.swift */,
+				0257710624053C4A00CE62CD /* SualLabelCell.xib */,
+				0257710D2405498E00CE62CD /* QuestionTextFieldCell.swift */,
+				0257710E2405498E00CE62CD /* QuestionTextFieldCell.xib */,
+			);
+			path = Answers;
 			sourceTree = "<group>";
 		};
 		02CA897B23E04C7200D011EF /* Resources */ = {
@@ -348,7 +399,6 @@
 		02CCAE1223F6AFF40099A7B2 /* Questions */ = {
 			isa = PBXGroup;
 			children = (
-				02CCAE2D240008D30099A7B2 /* QuestionForm */,
 				02CCAE1323F6AFFF0099A7B2 /* QuestionsOfP */,
 			);
 			path = Questions;
@@ -361,6 +411,8 @@
 				02CCAE1523F6B0220099A7B2 /* QuestionsHeaderCell.xib */,
 				02CCAE2923FFF4610099A7B2 /* QuestionsFooterCell.swift */,
 				02CCAE2A23FFF4610099A7B2 /* QuestionsFooterCell.xib */,
+				022D1EAC2457345200418D37 /* QuestionCell.swift */,
+				022D1EAD2457345200418D37 /* QuestionCell.xib */,
 			);
 			path = QuestionsOfP;
 			sourceTree = "<group>";
@@ -372,13 +424,6 @@
 				02CCAE2023FBD77E0099A7B2 /* HeaderSearchCell.xib */,
 			);
 			path = Search;
-			sourceTree = "<group>";
-		};
-		02CCAE2D240008D30099A7B2 /* QuestionForm */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = QuestionForm;
 			sourceTree = "<group>";
 		};
 		AA8C16A7E952AAA70B4AD252 /* Frameworks */ = {
@@ -514,7 +559,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0207A25B23DDA5630093F989 /* TitleAndDateCell.xib in Resources */,
+				0257710824053C4A00CE62CD /* SualLabelCell.xib in Resources */,
+				022D1EAF2457345200418D37 /* QuestionCell.xib in Resources */,
 				0207A22223DC59350093F989 /* LaunchScreen.storyboard in Resources */,
+				025771102405498E00CE62CD /* QuestionTextFieldCell.xib in Resources */,
 				0299C25923F02BBF00B87212 /* stheiti_medium.ttf in Resources */,
 				02CA898C23E0759200D011EF /* AgrarForumLabelCell.xib in Resources */,
 				02CCAE2223FBD77E0099A7B2 /* HeaderSearchCell.xib in Resources */,
@@ -534,6 +582,7 @@
 				020906C123ED9C26009A7E47 /* ProfileButton.xib in Resources */,
 				0207A21D23DC59340093F989 /* Main.storyboard in Resources */,
 				02CCAE2C23FFF4610099A7B2 /* QuestionsFooterCell.xib in Resources */,
+				0257710024053A8900CE62CD /* QuestionFormCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,13 +713,20 @@
 				02CA899323E2E76100D011EF /* CheckBoxCell.swift in Sources */,
 				0207A21A23DC59340093F989 /* TableViewController.swift in Sources */,
 				02CCAE0D23F02CD40099A7B2 /* Status.swift in Sources */,
+				0257711224065B2400CE62CD /* Question.swift in Sources */,
+				0257710724053C4A00CE62CD /* SualLabelCell.swift in Sources */,
 				02CCAE2123FBD77E0099A7B2 /* HeaderSearchCell.swift in Sources */,
 				0207A21623DC59340093F989 /* AppDelegate.swift in Sources */,
+				022D1EB5245FF56B00418D37 /* QuestionAndAnswer.swift in Sources */,
+				025771142434ED3300CE62CD /* StatusQuestion.swift in Sources */,
+				025770FF24053A8900CE62CD /* QuestionFormCell.swift in Sources */,
 				020906C023ED9C26009A7E47 /* ProfileButton.swift in Sources */,
 				020906C823F028A8009A7E47 /* ApiHelper.swift in Sources */,
 				0207A24823DC6EA00093F989 /* LogoCell.swift in Sources */,
+				022D1EB9245FF8EC00418D37 /* StatusQuestionAndAnswer.swift in Sources */,
 				02CA898123E059A200D011EF /* RegistrationCell.swift in Sources */,
 				02CCAE1623F6B0220099A7B2 /* QuestionsHeaderCell.swift in Sources */,
+				0257710F2405498E00CE62CD /* QuestionTextFieldCell.swift in Sources */,
 				0207A25623DD9E760093F989 /* EmptyCell.swift in Sources */,
 				0207A25A23DDA5630093F989 /* TitleAndDateCell.swift in Sources */,
 				02CA898423E0748500D011EF /* RegistrationViewController.swift in Sources */,
@@ -688,8 +744,12 @@
 				02CA897A23DDAE2A00D011EF /* TextFieldCell.swift in Sources */,
 				02CCAE0F23F2BB670099A7B2 /* ProfileVC.swift in Sources */,
 				02CA898B23E0759200D011EF /* AgrarForumLabelCell.swift in Sources */,
+				022D1EB7245FF6AC00418D37 /* Answer.swift in Sources */,
+				0257710224053B8600CE62CD /* QuestionFormVC.swift in Sources */,
+				022D1EAE2457345200418D37 /* QuestionCell.swift in Sources */,
 				02CCAE1123F6A7B20099A7B2 /* User.swift in Sources */,
 				02CCAE2423FBDBC80099A7B2 /* ProfileUserVC.swift in Sources */,
+				022D1EB32457378900418D37 /* QuestionSelf.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

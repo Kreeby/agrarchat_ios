@@ -140,7 +140,7 @@ class TableViewController: UITableViewController {
     
     @objc func register() {
 //        self.performSegue(withIdentifier: "register", sender: self)
-        let vc = storyboard?.instantiateViewController(withIdentifier: "QuestionVC") as! QuestionVC
+        let vc = storyboard?.instantiateViewController(withIdentifier: "RegistrationViewController") as! RegistrationViewController
         navigationController?.show(vc, sender: nil)
     }
     
